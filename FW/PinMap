@@ -1,0 +1,67 @@
+## Pin map used for the main.cpp file
+
+Pin map used in this code
+
+You can change these if your wiring is different, but this matches what we’ve been talking about:
+
+L298N → ESP32
+
+Motor A (left)
+
+ENA → GPIO25 (PWM)
+
+IN1 → GPIO26
+
+IN2 → GPIO27
+
+Motor B (right)
+
+ENB → GPIO14 (PWM)
+
+IN3 → GPIO32
+
+IN4 → GPIO33
+
+Power (not in code, but important)
+
+VS → motor battery (e.g. 7–12V)
+
+5V → 5V regulator / logic 5V
+
+GND → shared with ESP32 GND
+
+BME680 → ESP32 (I²C)
+
+VDD → 3.3V
+
+VDDIO → 3.3V
+
+GND → GND
+
+SDI → SDA (GPIO21)
+
+SCK (on breakout) → SCL (GPIO22)
+
+CSB → 3.3V (forces I²C mode)
+
+SDO → GND (I²C address 0x76)
+
+Servo → ESP32
+
+PWM → GPIO18
+
+→ 5V servo supply (NOT 3.3V)
+
+– → GND (same GND as ESP32)
+
+Also: put a big cap (e.g. 470–1000 µF) across servo 5V–GND.
+
+📦 Required libraries (Arduino IDE)
+
+Install via Library Manager:
+
+Adafruit BME680 Library
+
+Adafruit Unified Sensor
+
+ESP32Servo (by Kevin Harrington or similar)
