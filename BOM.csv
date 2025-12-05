@@ -1,5 +1,5 @@
 1 x ESP32-WROOM-32D
-1 x L28N controllerf or the motors
+1 x L298N controllerf or the motors
 2 x Vybronics vz30c1t dc motors
 1 x Motor_Servo_Futaba for the axle control
 1 x BME680 weather sensor module
